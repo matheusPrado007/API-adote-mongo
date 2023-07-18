@@ -8,7 +8,7 @@ main().catch((err) => console.log(err));
 
 async function main() {
   await mongoose.connect(
-    `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASS}@cluster0.cuwbasa.mongodb.net/`
+    process.env.MONGO_URL
   );
 
   console.log("Conectado com sucesso!");
