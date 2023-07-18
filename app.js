@@ -4,6 +4,13 @@ const app = express();
 require("dotenv").config();
 require("./db");
 
+const corsOptions = {
+  origin: '*',
+};
+
+app.use(cors(corsOptions));
+
+
 const port = process.env.PORT || 3000;
 
 const pictureRouter = require("./routes/picture");
