@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require('cors');
 const app = express();
+app.use('/uploads', express.static('uploads'));
 
 require("dotenv").config();
 require("./db");
