@@ -8,7 +8,8 @@ exports.create = async (req, res) => {
       idade,
       descricao,
       uf,
-      cidade
+      cidade,
+      adotado,
     } = req.body;
 
     const file = req.file;
@@ -18,7 +19,8 @@ exports.create = async (req, res) => {
       idade,
       descricao,
       uf,
-      cidade
+      cidade,
+      adotado
     });
 
     await picture.save();

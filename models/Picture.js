@@ -8,6 +8,7 @@ const PictureSchema = new Schema({
   descricao: {type: String, required: true},
   uf: {type: String, required: true},
   cidade: {type: String, required: true},
+  adotado: {type: String, required: true},
 });
 
 module.exports = mongoose.model("Picture", PictureSchema);
