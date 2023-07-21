@@ -3,7 +3,8 @@ const Picture = require("../models/Picture");
 
 exports.create = async (req, res) => {
   try {
-    const { name, 
+    const {
+      name,
       idade,
       descricao,
       uf,
